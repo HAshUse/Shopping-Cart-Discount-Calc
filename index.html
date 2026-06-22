@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Digital Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shopping Cart & Discount Calc</h1>
+    <p>A simple shopping cart to learn debugging and feature building.</p>
+
+    <div class="container">
+        <!-- Products Grid -->
+        <div class="products-container">
+            <h2>Products</h2>
+            <div class="grid">
+                <div class="product" data-id="1" data-price="10" data-name="JavaScript Book">
+                    <h3>JavaScript Book</h3>
+                    <p class="price">$10</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-price="20" data-name="Cool Headphones">
+                    <h3>Cool Headphones</h3>
+                    <p class="price">$20</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="3" data-price="15" data-name="Coffee Mug">
+                    <h3>Coffee Mug</h3>
+                    <p class="price">$15</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar / Cart -->
+        <div class="sidebar">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items added dynamically here -->
+            </ul>
+
+            <div class="total-section">
+                <h3>Total: $<span id="total-price">0</span></h3>
+            </div>
+
+            <div class="promo-section">
+                <h3>Have a Promo Code?</h3>
+                <input type="text" id="promo-code" placeholder="Enter promo code">
+                <button id="apply-promo">Apply</button>
+                <div id="promo-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- For debugging version use script.js -->
+    <!-- For answer version change to script-ans.js -->
+    <script src="script-ans.js"></script>
+</body>
+</html>
